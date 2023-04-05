@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background:#404040;
+   padding: 30px;
+}
+
+.page {
+    background-image: url('/img/fundo.svg');
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1024px;
+    margin: 0 auto;
+}
+
+.top {
+    display: grid;
+    gap:10px;
+    padding: 190px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 180px 180px 180px;
+    justify-content: center;
+    grid-template-areas: 
+    "A B C D"
+    "E F G H"
+    "I J K L";
+}
+
+.buraco {
+    background: url('/img/toupeira6.svg') no-repeat;
+}
+
+main .top div:nth-child(1){
+    grid-area: A;
+    animation: top-in;
+    animation-duration: 1500ms;
+    animation-delay: 3s;
+}
+
+main .top div:nth-child(2){
+    grid-area: B;
+}
+
+main .top div:nth-child(3){
+    grid-area: C;
+}
+
+main .top div:nth-child(4) {
+    grid-area: D;
+    animation: top-in;
+    animation-duration: 1500ms;
+    animation-delay: 6s;
+}
+
+main .top div:nth-child(5) {
+    grid-area: E;
+}
+
+main .top div:nth-child(6) {
+    grid-area: F;
+    animation: top-in;
+    animation-duration: 1500ms;
+    animation-delay: 9s;
+}
+
+main .top div:nth-child(7) {
+    grid-area: G;
+}
+
+main .top div:nth-child(8) {
+    grid-area: H;
+}
+
+main .top div:nth-child(9) {
+    grid-area: I;
+    animation: top-in;
+    animation-duration: 1500ms;
+    animation-delay: 11s;
+}
+
+main .top div:nth-child(10) {
+    grid-area: J;
+}
+
+main .top div:nth-child(11) {
+    grid-area: K;
+}
+
+main .top div:nth-child(12) {
+    grid-area: L;
+    animation: top-in;
+    animation-duration: 1500ms;
+    animation-delay: 13s;
+}
+
+@keyframes top-in {
+    0% {
+       background: url(/img/toupeira1.svg) no-repeat; 
+       transform: translateY(0); 
+       z-index: 1;
+    }
+    20% {
+        background: url(/img/toupeira2.svg) no-repeat; 
+        transform: translateY(0); 
+        z-index: 1;
+    }
+    40% {
+        background: url(/img/toupeira3.svg) no-repeat; 
+        transform: translateY(0); 
+        z-index: 1;
+    }
+    60% {
+        background: url(/img/toupeira4.svg) no-repeat; 
+        transform: translateY(0); 
+        z-index: 1;
+    }
+    80% {
+        background: url(/img/toupeira5.svg) no-repeat; 
+        transform: translateY(0); 
+        z-index: 1;
+    }
+    100% {
+        background: url(/img/toupeira6.svg) no-repeat; 
+        transform: translateY(0); 
+        z-index: 1;
+    }
+}
